@@ -51,18 +51,30 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-#scoreCont{
+#scoreCont {
     font-size: 25px;
     font-weight: bold;
     position: absolute;
     right: 45px;
-    top: 130px;
+    top: 150px;
     border: 2px solid white;
     padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 10px;
-
-}
+    font-family: "Montserrat", sans-serif;
+    border-radius: 20px;
+  }
+  
+.restartButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #08600b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
 
 
 @keyframes dino{
@@ -83,5 +95,105 @@ body{
     }
     100%{
         left: -10vw;
+    }
+}
+
+/* Mobile S */
+@media only screen and (max-width: 320px) {
+    .gameOver {
+        font-size: 24px;
+    }
+
+    #scoreCont {
+        font-size: 16px;
+        top: 120px;
+    }
+
+    .restartButton {
+        bottom: 15%;
+        right: 5%;
+        width: 60px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+/* Mobile M */
+@media only screen and (min-width: 375px) {
+    .gameOver {
+        font-size: 28px;
+    }
+
+    #scoreCont {
+        font-size: 20px;
+        top: 130px;
+    }
+
+    .restartButton {
+        bottom: 15%;
+        right: 5%;
+        width: 70px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile L */
+@media only screen and (min-width: 425px) {
+    .gameOver {
+        font-size: 32px;
+    }
+
+    #scoreCont {
+        font-size: 22px;
+        top: 140px;
+    }
+
+    .restartButton {
+        bottom: 15%;
+        right: 5%;
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .gameOver {
+        font-size: 40px;
+    }
+
+    #scoreCont {
+        font-size: 25px;
+        top: 150px;
+    }
+
+    .restartButton {
+        bottom: 15%;
+        right: 5%;
+        width: 100px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+    .gameOver {
+        font-size: 50px;
+    }
+
+    #scoreCont {
+        font-size: 30px;
+        top: 160px;
+    }
+
+    .restartButton {
+        bottom: 15%;
+        right: 5%;
+        width: 120px;
+        height: 60px;
+        font-size: 20px;
     }
 }

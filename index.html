@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dino Game</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> <!-- Link to Google Fonts -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+
 </head>
 <body>
     <div class="gameContainer">
-        <div class="gameOver">Welcome to Dino Adventure</div>
-        <div class="dino"></div>
-        <div id="scoreCont">Your Score: 0</div>
-        <div class="obstacle obstacleAni"></div>
+        <div class="gameOver">Welcome to Dino Adventure</div> <!-- Element to display game over message -->
+        <div class="dino"></div> <!-- Element for displaying the dinosaur character -->
+        <div id="scoreCont">Your Score: 0</div> <!-- Element to display the score -->
+        <button class="restartButton" onclick="restartGame()">Restart</button> <!-- Restart button -->
+        <div class="obstacle obstacleAni"></div> <!-- Element for displaying the obstacles with animation -->
     </div>
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>
